@@ -1,0 +1,39 @@
+.container {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_container {
+  width: 100%;
+  min-height: 800px;
+  height: max-content;
+  background-color: #e3f2fd;
+}
+
+.img {
+  width: 500px;
+  height: 500px;
+}
+
+.divider {
+  width: 220px;
+  background-color: #f8a565;
+  border-radius: 10px;
+  size: 10px;
+  border-bottom-width: 2px;
+}
+
+@media screen and (max-width: 500px) {
+  .divider {
+    width: 120px;
+  }
+
+  .img {
+    margin-top: 3rem;
+    width: 300px;
+    height: 300px;
+  }
+}

@@ -1,0 +1,48 @@
+.container {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date_container {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  padding: 10px;
+  margin: 2rem auto;
+  background-color: #30a2ff;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+}
+
+.form_container {
+  width: 350px;
+  height: 450px;
+  background-color: #34a1fa;
+}
+
+@media screen and (max-width: 500px) {
+  .form_container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .table_container {
+    width: 90vw;
+  }
+
+  .date_container {
+    width: 300px;
+    height: max-content;
+  }
+
+  .img {
+    width: 100px;
+    height: 100px;
+  }
+}

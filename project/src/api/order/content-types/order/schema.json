@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer_name": {
+      "type": "string"
+    },
+    "customer_number": {
+      "type": "string"
+    },
+    "product_name": {
+      "type": "text"
+    },
+    "cartons": {
+      "type": "integer"
+    },
+    "total_volume": {
+      "type": "string"
+    },
+    "total_weight": {
+      "type": "string"
+    },
+    "store_date": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

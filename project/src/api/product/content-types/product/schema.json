@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "Carton": {
+      "type": "integer",
+      "default": 1
+    },
+    "total_weight": {
+      "type": "string"
+    },
+    "persian_description": {
+      "type": "text"
+    },
+    "chinese_description": {
+      "type": "text"
+    },
+    "container_number": {
+      "type": "string"
+    },
+    "Direction": {
+      "type": "text"
+    },
+    "customer_name": {
+      "type": "string",
+      "required": true
+    },
+    "product_id": {
+      "type": "string",
+      "required": true
+    },
+    "port_label": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::port-label.port-label",
+      "mappedBy": "product"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "english_heading": {
+      "type": "richtext"
+    },
+    "english_content": {
+      "type": "richtext"
+    },
+    "persian_heading": {
+      "type": "richtext"
+    },
+    "persian_content": {
+      "type": "richtext"
+    },
+    "chinese_heading": {
+      "type": "richtext"
+    },
+    "chinese_content": {
+      "type": "richtext"
+    }
+  }
+}

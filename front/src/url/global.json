@@ -1,0 +1,13 @@
+{
+  "url": {
+    "slider": "http://localhost:1337/api/slider?populate=*",
+    "slider_image": "http://localhost:1337",
+    "footer": "http://localhost:1337/api/footer",
+    "social_media": "http://localhost:1337/api/social-media",
+    "title": "http://localhost:1337/api/title",
+    "icons": "http://localhost:1337/api/icon?populate=*",
+    "icon_image": "http://localhost:1337",
+    "goal": "http://localhost:1337/api/goal",
+    "uri": "http://localhost:1337/graphql"
+  }
+}

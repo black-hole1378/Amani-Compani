@@ -1,0 +1,18 @@
+.container {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #78c1f3;
+}
+
+.form_container {
+  width: 600px;
+  min-width: 800px;
+  margin: 5rem auto;
+  height: max-content;
+  min-height: 500px;
+}

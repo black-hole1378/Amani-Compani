@@ -1,0 +1,19 @@
+{
+  "navbar": {
+    "contact_us": "تماس با ما",
+    "home": "خانه",
+    "about_us": "در باره ما",
+    "branch": "سفارش",
+    "follow_up": "پیگیری"
+  },
+  "footer": {
+    "contact": {
+      "name": "تماس با ما",
+      "address": "آدرس",
+      "tel": "تلفون",
+      "postal_code": "کد پستی",
+      "email": "ایمیل"
+    },
+    "about_us": "در باره ما"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Telephone": {
+      "type": "string",
+      "required": true
+    },
+    "postal_code": {
+      "type": "integer",
+      "required": true
+    },
+    "Address": {
+      "type": "richtext"
+    },
+    "P_Address": {
+      "type": "richtext"
+    },
+    "About_us": {
+      "type": "richtext"
+    },
+    "p_about_us": {
+      "type": "richtext"
+    },
+    "C_Address": {
+      "type": "richtext"
+    },
+    "c_about_us": {
+      "type": "richtext"
+    }
+  }
+}

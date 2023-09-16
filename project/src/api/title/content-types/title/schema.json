@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "titles",
+  "info": {
+    "singularName": "title",
+    "pluralName": "titles",
+    "displayName": "title",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "english_content": {
+      "type": "richtext"
+    },
+    "chinese_content": {
+      "type": "richtext"
+    },
+    "persian_content": {
+      "type": "richtext"
+    },
+    "persian_heading": {
+      "type": "richtext"
+    },
+    "english_heading": {
+      "type": "richtext"
+    },
+    "chinese_heading": {
+      "type": "richtext"
+    },
+    "english_subtitle": {
+      "type": "richtext"
+    },
+    "persian_subtitle": {
+      "type": "richtext"
+    },
+    "chinese_subtitle": {
+      "type": "richtext"
+    }
+  }
+}

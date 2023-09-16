@@ -1,0 +1,29 @@
+.footer {
+  background-color: #279eff;
+  min-height: 400px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+}
+
+.container {
+  height: 100%;
+  padding: 2.8rem;
+}
+
+.logo {
+  height: px;
+  width: 300px;
+}
+
+.link {
+  text-decoration: none;
+  outline: none;
+  color: #ffff;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.link:hover {
+  background-color: #66b6fc;
+}

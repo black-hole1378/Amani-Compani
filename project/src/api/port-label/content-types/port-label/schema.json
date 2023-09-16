@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "port_labels",
+  "info": {
+    "singularName": "port-label",
+    "pluralName": "port-labels",
+    "displayName": "Port_Label",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firts_label": {
+      "type": "text",
+      "required": true
+    },
+    "second_label": {
+      "type": "text",
+      "required": true
+    },
+    "third_label": {
+      "type": "text"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product",
+      "inversedBy": "port_label"
+    },
+    "p_first_lable": {
+      "type": "text",
+      "required": true
+    },
+    "p_second_label": {
+      "type": "string"
+    },
+    "p_third_label": {
+      "type": "text"
+    },
+    "ch_first_lable": {
+      "type": "string"
+    },
+    "ch_second_label": {
+      "type": "string"
+    },
+    "ch_third_label": {
+      "type": "text"
+    },
+    "port1_date": {
+      "type": "date"
+    },
+    "port2_date": {
+      "type": "date"
+    },
+    "port3_date": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "navbar": {
+    "contact_us": "Contact us",
+    "home": "Home",
+    "about_us": "About us",
+    "branch": "Order",
+    "follow_up": "Tracking"
+  },
+  "footer": {
+    "contact": {
+      "name": "Contact",
+      "address": "Address",
+      "tel": "Tel",
+      "postal_code": "Postal code",
+      "email": "Email"
+    },
+    "about_us": "About us"
+  }
+}
