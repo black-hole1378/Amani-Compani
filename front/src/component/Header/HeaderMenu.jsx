@@ -27,12 +27,11 @@ const Text = styled(Typography)`
 export default function Menus() {
   const [t] = useTranslation("global");
   const { language } = useSelector((state) => state.lan);
+  console.log(language);
   return (
     <Box
       display={{ xs: "none", md: "flex" }}
-      flexDirection={
-        language == ("English" || "Chinese") ? "row" : "row-reverse"
-      }
+      flexDirection={language == "Persian" ? "row-reverse" : "row"}
       alignItems={"center"}
       gap={3}
     >

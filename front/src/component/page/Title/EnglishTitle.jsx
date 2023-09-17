@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Divider } from "@mui/material";
+import { Box, Container, Divider } from "@mui/material";
 import style from "../../../style/page.module.css";
 import { PT_Sans } from "next/font/google";
 const pt_sans = PT_Sans({ subsets: ["cyrillic"], weight: "700" });
@@ -14,10 +14,12 @@ const EnglishTitle = ({ title }) => {
         <Heading className={pt_sans.className}>{title.english_heading}</Heading>
         <Divider component="span" className={style.divider} />
       </FLEX>
-      <Subtitle className={pt_sans.className}>
-        {title.english_subtitle}
-      </Subtitle>
-      <Content className={prompt.className}>{title.english_content}</Content>
+      <Box width={"90vw"}>
+        <Subtitle className={pt_sans.className}>
+          {title.english_subtitle}
+        </Subtitle>
+        <Content className={prompt.className}>{title.english_content}</Content>
+      </Box>
     </Container>
   );
 };

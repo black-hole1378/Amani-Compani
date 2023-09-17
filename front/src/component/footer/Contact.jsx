@@ -6,10 +6,22 @@ const roboto = PT_Serif({ subsets: ["latin"], weight: "700" });
 import { Sora } from "next/font/google";
 const dosis = Sora({ subsets: ["latin"], weight: "400" });
 import { useSelector } from "react-redux";
+
+const getData = (data, language) => {
+  switch (language) {
+    case "English":
+      return data.Address;
+    case "Persian":
+      return data.P_Address;
+    case "Chinese":
+      return data.C_Address;
+  }
+};
+
 const Contact = ({ data }) => {
   const { language } = useSelector((state) => state.lan);
   const my_data = [
-    { name: "footer.contact.address", link: data.Address },
+    { name: "footer.contact.address", link: getData(data, language) },
     { name: "footer.contact.tel", link: data.Telephone },
     { name: "footer.contact.postal_code", link: data.postal_code },
     { name: "footer.contact.email", link: data.Email },

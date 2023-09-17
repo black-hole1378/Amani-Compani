@@ -4,6 +4,8 @@ import "../style/globals.css";
 import Footer from "@/component/footer/Footer";
 import global_en from "../translation/english/global.json";
 import global_pe from "../translation/persian/global.json";
+import global_ch from "../translation/chinese/global.json";
+
 import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
@@ -18,6 +20,9 @@ i18next.init({
     },
     Persian: {
       global: global_pe,
+    },
+    Chinese: {
+      global: global_ch,
     },
   },
 });

@@ -13,6 +13,7 @@ export const FooterData = gql`
           postal_code
           Email
           C_Address
+          c_about_us
         }
       }
     }

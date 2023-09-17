@@ -1,0 +1,19 @@
+{
+  "navbar": {
+    "contact_us": "联系我们",
+    "home": "家",
+    "about_us": "关于我们",
+    "branch": "命令",
+    "follow_up": "追踪"
+  },
+  "footer": {
+    "contact": {
+      "name": "接触",
+      "address": "地址",
+      "tel": "电话",
+      "postal_code": "邮政编码",
+      "email": "电子邮件"
+    },
+    "about_us": "关于我们"
+  }
+}

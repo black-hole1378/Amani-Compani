@@ -34,4 +34,5 @@ export const FLEX = styled(Box)`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  max-width: 90vw;
 `;
