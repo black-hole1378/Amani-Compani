@@ -14,7 +14,7 @@ export default function Page() {
           p={6}
           display={"flex"}
           flexDirection={{
-            md: language === ("English" || "Chinese") ? "row" : "row-reverse",
+            md: language === "Persian" ? "row-reverse" : "row",
             xs: "column",
           }}
           alignItems={"center"}

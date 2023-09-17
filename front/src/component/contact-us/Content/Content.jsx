@@ -4,6 +4,7 @@ import EnglishContent from "./EnglishContent";
 import PersianContent from "./PersianContent";
 import { useQuery } from "@apollo/client";
 import { FooterData } from "@/graphql/Footer";
+import ChineseContent from "./ChineseContent";
 const Content = () => {
   const { data, loading } = useQuery(FooterData);
   const { language } = useSelector((state) => state.lan);
@@ -13,6 +14,8 @@ const Content = () => {
         return <EnglishContent data={data} />;
       case "Persian":
         return <PersianContent data={data} />;
+      case "Chinese":
+        return <ChineseContent data={data} />;
     }
 };
 
