@@ -16,3 +16,24 @@
   height: max-content;
   min-height: 500px;
 }
+
+.content {
+  width: max-content;
+  height: 200px;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .form_container {
+    width: 100%;
+    min-width: 300px;
+    height: max-content;
+  }
+
+  .container {
+    margin-top: 4rem;
+  }
+}

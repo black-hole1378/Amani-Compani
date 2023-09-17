@@ -3,7 +3,7 @@ import { Button, Container, Grid, TextField } from "@mui/material";
 export default function EnglishForm({ formik }) {
   return (
     <Container maxWidth sx={{ p: 1 }}>
-      <Grid container spacing={{ md: 3 }}>
+      <Grid container spacing={{ md: 3 }} rowSpacing={{ md: 3, xs: 4 }}>
         <Grid item md={6} xs={12}>
           <TextField
             name="customer_name"
@@ -35,7 +35,7 @@ export default function EnglishForm({ formik }) {
             fullWidth
           />
         </Grid>
-        <Grid item md={2}>
+        <Grid item md={2} xs={12}>
           <TextField
             required
             name="carton"
@@ -45,7 +45,7 @@ export default function EnglishForm({ formik }) {
             onChange={formik.handleChange}
           />
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={6} xs={12}>
           <TextField
             required
             name="volume"
@@ -55,7 +55,7 @@ export default function EnglishForm({ formik }) {
             onChange={formik.handleChange}
           />
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={6} xs={12}>
           <TextField
             required
             name="weight"
@@ -65,7 +65,7 @@ export default function EnglishForm({ formik }) {
             onChange={formik.handleChange}
           />
         </Grid>
-        <Grid item md={8}>
+        <Grid item md={8} xs={12}>
           <TextField
             name="description"
             fullWidth
@@ -76,7 +76,7 @@ export default function EnglishForm({ formik }) {
             onChange={formik.handleChange}
           />
         </Grid>
-        <Grid item md={4}>
+        <Grid item md={4} xs={12}>
           <TextField
             required
             name="date"
@@ -92,6 +92,7 @@ export default function EnglishForm({ formik }) {
           display={"flex"}
           alignItems={"center"}
           justifyContent={"center"}
+          xs={12}
         >
           <Button
             onClick={formik.handleSubmit}
