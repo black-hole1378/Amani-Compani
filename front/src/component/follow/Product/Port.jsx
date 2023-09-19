@@ -4,7 +4,8 @@ import { PT_Sans } from "next/font/google";
 const pt_sans = PT_Sans({ subsets: ["cyrillic"], weight: "700" });
 import { Noto_Sans } from "next/font/google";
 const noto = Noto_Sans({ subsets: ["devanagari"], weight: "400" });
-
+import { Noto_Sans_SC } from "next/font/google";
+const noto1 = Noto_Sans_SC({ subsets: ["latin"], weight: "700" });
 const BOX = styled(Box)`
   display: flex;
   align-items: center;
@@ -34,6 +35,27 @@ const Container = styled(Box)`
   justify-content: center;
   align-items: center;
 `;
+
+const ChineseContainer = ({ port }) => {
+  return (
+    <BOX>
+      <Container gap={1}>
+        <Text className={noto1.className}>{port.ch_first_lable}</Text>
+        <Text className={noto1.className}>{port.port1_date}</Text>
+      </Container>
+
+      <Container gap={1}>
+        <Text className={noto1.className}>{port.ch_second_label}</Text>
+        <Text className={noto1.className}>{port.port2_date}</Text>
+      </Container>
+
+      <Container gap={1}>
+        <Text className={noto1.className}>{port.ch_third_label}</Text>
+        <Text className={noto1.className}>{port.port3_date}</Text>
+      </Container>
+    </BOX>
+  );
+};
 
 const EnglishPortContainer = ({ port }) => {
   return (
@@ -65,13 +87,13 @@ const PersianPortContainer = ({ port }) => {
       </Container>
 
       <Container gap={1}>
-        <Text className={noto.className}>{port.p_second_lable}</Text>
+        <Text className={noto.className}>{port.p_second_label}</Text>
         <Text className={pt_sans.className}>{port.port2_date}</Text>
       </Container>
 
       <Container gap={1}>
         <Text className={noto.className} sx={{ direction: "rtl" }}>
-          {port.p_third_lable}
+          {port.p_third_label}
         </Text>
         <Text className={pt_sans.className}>{port.port3_date}</Text>
       </Container>
@@ -87,5 +109,7 @@ export default function PortContainer({ product, language }) {
       return <EnglishPortContainer port={port} />;
     case "Persian":
       return <PersianPortContainer port={port} />;
+    case "Chinese":
+      return <ChineseContainer port={port} />;
   }
 }

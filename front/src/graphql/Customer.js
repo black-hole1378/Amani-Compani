@@ -10,8 +10,11 @@ const ProductData = gql`
           total_weight
           persian_description
           Direction
+          chinese_description
           Carton
           container_number
+          persian_direction
+          chinese_direction
           port_label {
             data {
               attributes {

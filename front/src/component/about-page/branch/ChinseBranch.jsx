@@ -12,7 +12,7 @@ import { EmailOutlined, WorkHistory } from "@mui/icons-material";
 import { Text, SmallText } from "./BranchStyle";
 const variant = {
   visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, scale: 0, x: 200 },
+  hidden: { opacity: 0, scale: 0, x: 150 },
 };
 
 const getData = ({ data }) => {

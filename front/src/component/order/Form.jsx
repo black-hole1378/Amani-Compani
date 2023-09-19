@@ -5,6 +5,7 @@ import PersianForm from "./PersianForm";
 import { useFormik } from "formik";
 import { useMutation } from "@apollo/client";
 import { Order } from "@/graphql/Order";
+import ChinaForm from "./ChinaForm";
 export default function Form({ setOpen }) {
   const { language } = useSelector((state) => state.lan);
   const [createOrder, { error }] = useMutation(Order);
@@ -45,5 +46,7 @@ export default function Form({ setOpen }) {
       return <EnglishForm formik={formik} />;
     case "Persian":
       return <PersianForm formik={formik} />;
+    case "Chinese":
+      return <ChinaForm formik={formik} />;
   }
 }
