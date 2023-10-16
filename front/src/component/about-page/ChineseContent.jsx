@@ -5,7 +5,6 @@ import { Subtitle, Content } from "./ContentStyle";
 import { Noto_Sans_SC } from "next/font/google";
 const noto1 = Noto_Sans_SC({ subsets: ["latin"], weight: "700" });
 const noto2 = Noto_Sans_SC({ subsets: ["latin"], weight: "500" });
-const noto3 = Noto_Sans_SC({ subsets: ["latin"], weight: "400" });
 import style from "../../style/about_us.module.css";
 import { motion } from "framer-motion";
 export default function ChineseContent({ data }) {

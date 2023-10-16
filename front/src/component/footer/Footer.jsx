@@ -3,8 +3,6 @@ import React from "react";
 import style from "../../style/footer.module.css";
 import About from "./About";
 import Contact from "./Contact";
-import urls from "../../url/global.json";
-import useFetch from "../../useFetch/useFetch";
 import { useSelector } from "react-redux";
 import Logo from "./LogoContainer";
 import SocialMedia from "./SocialMedia";
