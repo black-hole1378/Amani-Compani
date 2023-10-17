@@ -5,7 +5,6 @@ import { Box } from "@mui/material";
 import { Suspense } from "react";
 import Loading from "./loading";
 import Title from "../component/page/Title/Title";
-import { useSelector } from "react-redux";
 import IconContainer from "@/component/page/Icons/IconContainer";
 import Goal from "@/component/page/Goal/Goal";
 export default function Home() {
