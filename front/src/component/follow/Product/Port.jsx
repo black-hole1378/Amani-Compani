@@ -103,7 +103,6 @@ const PersianPortContainer = ({ port }) => {
 
 export default function PortContainer({ product, language }) {
   const port = product.attributes.port_label.data.attributes;
-  console.log(port);
   switch (language) {
     case "English":
       return <EnglishPortContainer port={port} />;

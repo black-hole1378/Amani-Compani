@@ -4,7 +4,8 @@
   "info": {
     "singularName": "order",
     "pluralName": "orders",
-    "displayName": "Order"
+    "displayName": "Order",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,9 +21,6 @@
     "product_name": {
       "type": "text"
     },
-    "cartons": {
-      "type": "integer"
-    },
     "total_volume": {
       "type": "string"
     },
@@ -34,6 +32,9 @@
     },
     "description": {
       "type": "text"
+    },
+    "cartons": {
+      "type": "string"
     }
   }
 }

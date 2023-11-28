@@ -36,4 +36,8 @@
   .container {
     margin-top: 4rem;
   }
+
+  .content {
+    width: 85vw;
+  }
 }

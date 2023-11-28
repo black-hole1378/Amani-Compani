@@ -32,7 +32,7 @@ export default function Form({ setOpen }) {
             total_volume: formik.values.volume,
             total_weight: formik.values.weight,
             product_name: formik.values.product_name,
-            cartons: parseInt(formik.values.carton),
+            cartons: formik.values.carton,
           },
         },
       });
